@@ -1,0 +1,26 @@
+#websiteContainer
+{
+	width: 1280px;
+	height: 960px;
+	background-color: white;
+	display: flex;
+}
+
+#navBar
+{
+	width: inherit;
+	height: 90px;
+	display: inline-block;
+	-moz-box-shadow:    3px 4px 6px 0px #ccc;
+  	-webkit-box-shadow: 3px 4px 6px 0px #ccc;
+  	box-shadow:         3px 4px 6px 0px #ccc;
+}
+
+#logo
+{
+	width: 90px;
+	height: 90px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
