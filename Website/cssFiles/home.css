@@ -2,8 +2,11 @@
 {
 	width: 1280px;
 	height: 960px;
-	background-color: white;
+	background-color: #ffffff;
 	display: flex;
+	-moz-box-shadow:    3px 4px 6px 5px #ccc;
+  	-webkit-box-shadow: 3px 4px 6px 5px #ccc;
+  	box-shadow:         3px 4px 6px 5px #ccc;
 }
 
 #navBar
@@ -14,13 +17,64 @@
 	-moz-box-shadow:    3px 4px 6px 0px #ccc;
   	-webkit-box-shadow: 3px 4px 6px 0px #ccc;
   	box-shadow:         3px 4px 6px 0px #ccc;
+  	background-color: white;
 }
 
 #logo
 {
-	width: 90px;
-	height: 90px;
+	position: relative;
+	top: -33px;
+	width: 85px;
+	height: 85px;
 	display: block;
-    margin-left: auto;
-    margin-right: auto
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#hamburger
+{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	top: 30px;
+	left: 30px;
+}
+
+#dropDown
+{
+	position: absolute;
+	width: 0px;
+	height: 870px;
+	background-color: #ffffff;
+	top: 98px;
+	-moz-box-shadow:    6px 0px 6px 0px #ccc;
+  	-webkit-box-shadow: 6px 0px 6px 0px #ccc;
+  	box-shadow:         6px 0px 6px 0px #ccc;
+  	transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    -moz-transition-property: width;
+    -moz-transition-duration: 0.5s;
+    -moz-transition-timing-function: ease;
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+}
+
+#links
+{
+	visibility: hidden;
+}
+
+a
+{
+	text-decoration: none;
+	color: grey;
+	font-family: : "Tahoma", sans-serif;
+}
+
+a:hover
+{
+	transition-duration: 1s;
+	color: black;
 }

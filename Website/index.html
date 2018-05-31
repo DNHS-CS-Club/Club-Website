@@ -3,13 +3,49 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="cssFiles/home.css">
+	<title>Home | DNHS Nighthackers</title>
 </head>
 
 <body>
 	<div id="websiteContainer">
 		<div id="navBar">
-			<div 
-			<img id="logo" src="assets/logo.jpg">
+			<img id="hamburger" src="assets/hamburger.png" onclick="showDropdown()" />
+			<img id="logo" src="assets/logo.jpg" />
+		</div>
+
+		<div id="dropDown">
+			<div id="links">
+				<a href="index.html">Home</a>
+			</div>
+
+			<div id="links">
+				<a href=""></a>
+			</div>
+
+			<div id="links">
+				<a href=""></a>
+			</div>
 		</div>
 	</div>
 </body>
+
+<script type="text/javascript">
+	var i = 0;
+	var x;
+	function showDropdown()
+	{
+		i++;
+		if (i % 2 === 1)
+		{
+			document.getElementById('dropDown').style.width = "90px";
+			document.getElementById('links').style.visibility = "visible";
+		}
+		else
+		{
+			document.getElementById('dropDown').style.width = "0px";
+			document.getElementById('links').style.visibility = "hidden";
+		}
+		if(i === 2)
+			i = 0;
+	}
+</script>
