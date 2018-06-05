@@ -63,18 +63,26 @@
 
 #links
 {
+	width: 90px;
+	height: 30px;
+	/*background-color:grey;*/
 	visibility: hidden;
+	position: relative;
+	padding-top: 30px;
+	text-align: center;
+	
 }
 
 a
 {
 	text-decoration: none;
+	transition-duration: 0.5s;
 	color: grey;
 	font-family: : "Tahoma", sans-serif;
 }
 
 a:hover
 {
-	transition-duration: 1s;
+	transition-duration: 0.5s;
 	color: black;
 }
